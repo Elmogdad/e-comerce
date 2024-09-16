@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>التقارير - متجر إلكتروني</title>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white shadow">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-2xl font-bold">شعار المتجر</div>
+            <nav class="flex items-center space-x-4">
+                <a href="dashboard.html" class="hover:text-yellow-300">لوحة التحكم</a>
+                <a href="manage-products.html" class="hover:text-yellow-300">إدارة المنتجات</a>
+                <a href="manage-orders.html" class="hover:text-yellow-300">إدارة الطلبات</a>
+                <a href="manage-purchases.html" class="hover:text-yellow-300">إدارة المشتريات</a>
+                <a href="manage-customers.html" class="hover:text-yellow-300">إدارة العملاء</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold mb-6">التقارير</h1>
+
+        <!-- Sales Report -->
+        <section class="bg-white p-6 rounded shadow mb-6">
+            <h2 class="text-2xl font-bold mb-4">تقارير المبيعات</h2>
+            <table class="min-w-full bg-white">
+                <thead>
+                    <tr>
+                        <th class="py-2 px-4 border-b">رقم الطلب</th>
+                        <th class="py-2 px-4 border-b">اسم العميل</th>
+                        <th class="py-2 px-4 border-b">التاريخ</th>
+                        <th class="py-2 px-4 border-b">المبلغ الإجمالي</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-2 px-4 border-b">#001</td>
+                        <td class="py-2 px-4 border-b">عميل 1</td>
+                        <td class="py-2 px-4 border-b">01/01/2024</td>
+                        <td class="py-2 px-4 border-b">500.00 ر.س</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">#002</td>
+                        <td class="py-2 px-4 border-b">عميل 2</td>
+                        <td class="py-2 px-4 border-b">02/01/2024</td>
+                        <td class="py-2 px-4 border-b">300.00 ر.س</td>
+                    </tr>
+                    <!-- يمكنك إضافة المزيد من المبيعات هنا -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Purchases Report -->
+        <section class="bg-white p-6 rounded shadow mb-6">
+            <h2 class="text-2xl font-bold mb-4">تقارير المشتريات</h2>
+            <table class="min-w-full bg-white">
+                <thead>
+                    <tr>
+                        <th class="py-2 px-4 border-b">رقم المشتريات</th>
+                        <th class="py-2 px-4 border-b">اسم المنتج</th>
+                        <th class="py-2 px-4 border-b">الكمية</th>
+                        <th class="py-2 px-4 border-b">التاريخ</th>
+                        <th class="py-2 px-4 border-b">المبلغ الإجمالي</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-2 px-4 border-b">#P001</td>
+                        <td class="py-2 px-4 border-b">منتج 1</td>
+                        <td class="py-2 px-4 border-b">10</td>
+                        <td class="py-2 px-4 border-b">01/01/2024</td>
+                        <td class="py-2 px-4 border-b">1000.00 ر.س</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">#P002</td>
+                        <td class="py-2 px-4 border-b">منتج 2</td>
+                        <td class="py-2 px-4 border-b">5</td>
+                        <td class="py-2 px-4 border-b">02/01/2024</td>
+                        <td class="py-2 px-4 border-b">750.00 ر.س</td>
+                    </tr>
+                    <!-- يمكنك إضافة المزيد من المشتريات هنا -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Orders Report -->
+        <section class="bg-white p-6 rounded shadow">
+            <h2 class="text-2xl font-bold mb-4">تقارير الطلبات</h2>
+            <table class="min-w-full bg-white">
+                <thead>
+                    <tr>
+                        <th class="py-2 px-4 border-b">رقم الطلب</th>
+                        <th class="py-2 px-4 border-b">العميل</th>
+                        <th class="py-2 px-4 border-b">التاريخ</th>
+                        <th class="py-2 px-4 border-b">الحالة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-2 px-4 border-b">#001</td>
+                        <td class="py-2 px-4 border-b">عميل 1</td>
+                        <td class="py-2 px-4 border-b">01/01/2024</td>
+                        <td class="py-2 px-4 border-b">مكتمل</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">#002</td>
+                        <td class="py-2 px-4 border-b">عميل 2</td>
+                        <td class="py-2 px-4 border-b">02/01/2024</td>
+                        <td class="py-2 px-4 border-b">قيد المعالجة</td>
+                    </tr>
+                    <!-- يمكنك إضافة المزيد من الطلبات هنا -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-200">حقوق الطبع والنشر © 2024 - متجر إلكتروني</p>
+        </div>
+    </footer>
+
+</body>
+</html>

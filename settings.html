@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>الإعدادات - متجر إلكتروني</title>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white shadow">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-2xl font-bold">شعار المتجر</div>
+            <nav class="flex items-center space-x-4">
+                <a href="dashboard.html" class="hover:text-yellow-300">لوحة التحكم</a>
+                <a href="manage-products.html" class="hover:text-yellow-300">إدارة المنتجات</a>
+                <a href="manage-orders.html" class="hover:text-yellow-300">إدارة الطلبات</a>
+                <a href="manage-purchases.html" class="hover:text-yellow-300">إدارة المشتريات</a>
+                <a href="manage-customers.html" class="hover:text-yellow-300">إدارة العملاء</a>
+                <a href="reports.html" class="hover:text-yellow-300">التقارير</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold mb-6">الإعدادات</h1>
+
+        <!-- Account Settings -->
+        <section class="bg-white p-6 rounded shadow mb-6">
+            <h2 class="text-2xl font-bold mb-4">إعدادات الحساب</h2>
+            <form>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="font-bold">اسم المستخدم:</label>
+                        <input type="text" class="border rounded p-2 w-full" placeholder="أدخل اسم المستخدم" required />
+                    </div>
+                    <div>
+                        <label class="font-bold">البريد الإلكتروني:</label>
+                        <input type="email" class="border rounded p-2 w-full" placeholder="أدخل البريد الإلكتروني" required />
+                    </div>
+                    <div>
+                        <label class="font-bold">كلمة المرور:</label>
+                        <input type="password" class="border rounded p-2 w-full" placeholder="أدخل كلمة المرور" required />
+                    </div>
+                    <div>
+                        <label class="font-bold">تأكيد كلمة المرور:</label>
+                        <input type="password" class="border rounded p-2 w-full" placeholder="تأكيد كلمة المرور" required />
+                    </div>
+                </div>
+                <button type="submit" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-yellow-300">تحديث الإعدادات</button>
+            </form>
+        </section>
+
+        <!-- Store Settings -->
+        <section class="bg-white p-6 rounded shadow mb-6">
+            <h2 class="text-2xl font-bold mb-4">إعدادات المتجر</h2>
+            <form>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="font-bold">اسم المتجر:</label>
+                        <input type="text" class="border rounded p-2 w-full" placeholder="أدخل اسم المتجر" required />
+                    </div>
+                    <div>
+                        <label class="font-bold">وصف المتجر:</label>
+                        <textarea class="border rounded p-2 w-full" placeholder="أدخل وصف المتجر" required></textarea>
+                    </div>
+                    <div>
+                        <label class="font-bold">رقم الهاتف:</label>
+                        <input type="tel" class="border rounded p-2 w-full" placeholder="أدخل رقم الهاتف" required />
+                    </div>
+                    <div>
+                        <label class="font-bold">البريد الإلكتروني للدعم:</label>
+                        <input type="email" class="border rounded p-2 w-full" placeholder="أدخل بريد الدعم" required />
+                    </div>
+                </div>
+                <button type="submit" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-yellow-300">تحديث إعدادات المتجر</button>
+            </form>
+        </section>
+
+        <!-- General Preferences -->
+        <section class="bg-white p-6 rounded shadow">
+            <h2 class="text-2xl font-bold mb-4">التفضيلات العامة</h2>
+            <form>
+                <div class="flex items-center mb-4">
+                    <input type="checkbox" id="notifications" class="mr-2" />
+                    <label for="notifications" class="font-bold">تفعيل الإشعارات</label>
+                </div>
+                <div class="flex items-center mb-4">
+                    <input type="checkbox" id="dark-mode" class="mr-2" />
+                    <label for="dark-mode" class="font-bold">تفعيل الوضع المظلم</label>
+                </div>
+                <button type="submit" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-yellow-300">حفظ التفضيلات</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-200">حقوق الطبع والنشر © 2024 - متجر إلكتروني</p>
+        </div>
+    </footer>
+
+</body>
+</html>

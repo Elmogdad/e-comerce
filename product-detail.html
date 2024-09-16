@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>تفاصيل المنتج - متجر إلكتروني</title>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white shadow">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-2xl font-bold">شعار المتجر</div>
+            <nav class="flex items-center space-x-4">
+                <a href="clothes.html" class="hover:text-yellow-300">ملابس</a>
+                <a href="electronics.html" class="hover:text-yellow-300">إلكترونيات</a>
+                <a href="home-tools.html" class="hover:text-yellow-300">أدوات منزلية</a>
+                <a href="toys.html" class="hover:text-yellow-300">ألعاب</a>
+                <a href="#" class="hover:text-yellow-300">
+                    <i class="fas fa-search"></i>
+                </a>
+                <a href="#" class="hover:text-yellow-300">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <a href="#" class="hover:text-yellow-300">
+                    <i class="fas fa-user"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Product Detail Section -->
+    <section class="py-8">
+        <div class="container mx-auto flex flex-col md:flex-row">
+            <!-- Large Image -->
+            <div class="w-full md:w-1/2">
+                <img src="https://via.placeholder.com/600?text=صورة+المنتج" alt="اسم المنتج" class="w-full h-auto rounded shadow">
+                <div class="flex mt-4 space-x-2">
+                    <img src="https://via.placeholder.com/100?text=صورة+1" alt="صورة 1" class="w-1/4 cursor-pointer rounded shadow">
+                    <img src="https://via.placeholder.com/100?text=صورة+2" alt="صورة 2" class="w-1/4 cursor-pointer rounded shadow">
+                    <img src="https://via.placeholder.com/100?text=صورة+3" alt="صورة 3" class="w-1/4 cursor-pointer rounded shadow">
+                    <img src="https://via.placeholder.com/100?text=صورة+4" alt="صورة 4" class="w-1/4 cursor-pointer rounded shadow">
+                </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="w-full md:w-1/2 mt-4 md:mt-0 md:pl-8">
+                <h2 class="text-2xl font-bold">اسم المنتج</h2>
+                <p class="text-lg font-bold mt-2">150.00 ر.س</p>
+                <p class="text-gray-600 mt-2">وصف مفصل للمنتج يوضح ميزاته وفوائده.</p>
+
+                <!-- Size and Color Options -->
+                <div class="mt-4">
+                    <label class="font-bold">اللون:</label>
+                    <select class="border rounded p-2 mt-1">
+                        <option>أحمر</option>
+                        <option>أزرق</option>
+                        <option>أخضر</option>
+                    </select>
+                </div>
+                <div class="mt-4">
+                    <label class="font-bold">الحجم:</label>
+                    <select class="border rounded p-2 mt-1">
+                        <option>صغير</option>
+                        <option>متوسط</option>
+                        <option>كبير</option>
+                    </select>
+                </div>
+
+                <!-- Ratings -->
+                <div class="mt-4">
+                    <span class="font-bold">التقييمات:</span>
+                    <div class="flex items-center mt-1">
+                        <span class="text-yellow-400">★★★★★</span>
+                        <span class="ml-2">(5 مراجعات)</span>
+                    </div>
+                </div>
+
+                <!-- Add to Cart Button -->
+                <button class="mt-4 bg-blue-600 text-white p-2 rounded hover:bg-yellow-300">إضافة إلى السلة</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products Section -->
+    <section class="py-8 bg-gray-200">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-6">منتجات مشابهة</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-4 rounded shadow">
+                    <img src="https://via.placeholder.com/300?text=منتج+مشابه+1" alt="منتج 1" class="w-full h-48 object-cover rounded">
+                    <h3 class="text-xl mt-2">منتج مشابه 1</h3>
+                    <p class="text-lg font-bold mt-1">100.00 ر.س</p>
+                    <button class="mt-2 bg-blue-600 text-white p-2 rounded hover:bg-yellow-300">إضافة إلى السلة</button>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <img src="https://via.placeholder.com/300?text=منتج+مشابه+2" alt="منتج 2" class="w-full h-48 object-cover rounded">
+                    <h3 class="text-xl mt-2">منتج مشابه 2</h3>
+                    <p class="text-lg font-bold mt-1">150.00 ر.س</p>
+                    <button class="mt-2 bg-blue-600 text-white p-2 rounded hover:bg-yellow-300">إضافة إلى السلة</button>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <img src="https://via.placeholder.com/300?text=منتج+مشابه+3" alt="منتج 3" class="w-full h-48 object-cover rounded">
+                    <h3 class="text-xl mt-2">منتج مشابه 3</h3>
+                    <p class="text-lg font-bold mt-1">200.00 ر.س</p>
+                    <button class="mt-2 bg-blue-600 text-white p-2 rounded hover:bg-yellow-300">إضافة إلى السلة</button>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <img src="https://via.placeholder.com/300?text=منتج+مشابه+4" alt="منتج 4" class="w-full h-48 object-cover rounded">
+                    <h3 class="text-xl mt-2">منتج مشابه 4</h3>
+                    <p class="text-lg font-bold mt-1">250.00 ر.س</p>
+                    <button class="mt-2 bg-blue-600 text-white p-2 rounded hover:bg-yellow-300">إضافة إلى السلة</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-200">معلومات الاتصال | روابط سريعة | سياسة الخصوصية | شروط الاستخدام</p>
+            <div class="flex justify-center space-x-4 mt-2">
+                <a href="#" class="text-gray-200 hover:text-yellow-300">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" class="text-gray-200 hover:text-yellow-300">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="text-gray-200 hover:text-yellow-300">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
